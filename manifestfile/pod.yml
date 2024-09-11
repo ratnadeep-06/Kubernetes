@@ -1,11 +1,11 @@
-apiVersion:  v1  #acts a manuall to your system
+apiVersion:  v1  
 kind: Pod
-metadata:  #like a tag
+metadata:  
         name: mypod1
 spec:
  containers:
     - name: mypod-cont1
-      image: nginx:latest
+      image: ratnadeepsali/student:latest
       resources: 
           requests:
             cpu: "50m"
@@ -18,7 +18,3 @@ spec:
 
 
 
-
-#units
-#1 core  = 1000 millicoresb m = millicores
-#1gib  = 1024mib's
