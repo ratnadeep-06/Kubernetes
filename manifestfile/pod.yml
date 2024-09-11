@@ -4,7 +4,7 @@ metadata:
         name: mypod1
 spec:
  containers:
-    - name: mypod-cont1
+    - name: mypod-container
       image: ratnadeepsali/student:latest
       resources: 
           requests:
