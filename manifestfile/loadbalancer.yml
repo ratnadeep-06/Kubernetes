@@ -18,7 +18,7 @@ spec:
 apiVersion: v1 
 kind: Service
 metadata:
-        name: lb  #cluster 
+        name: cluster  #cluster 
 spec:
     selector:
           app: mypod2  
