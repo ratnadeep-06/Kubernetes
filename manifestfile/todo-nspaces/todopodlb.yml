@@ -9,7 +9,7 @@ metadata:
 spec:
   containers:
   - name: todolb
-    image: ratnadeepsali/todo:latest
+    image: swapnil0078/todoapp:latest
     resources: 
         requests:
             cpu: "50m"
