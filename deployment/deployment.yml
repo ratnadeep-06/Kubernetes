@@ -27,3 +27,21 @@ spec:
     selector:
         matchLabels:
             app: todoapp
+---
+
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: todolb
+  namespace: todoapp
+
+spec:
+  type: LoadBalancer
+  selector:
+    app: todolb
+  ports:
+  - port: 3000
+    targetPort: 3000
+    name: todolb
+    protocol: TCP                        
