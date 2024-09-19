@@ -5,6 +5,8 @@ metadata:
         labels:
             app: todoapp
 spec:
+   selector:
+          app: todoapp  
    type: LoadBalancer
     replicas: 14
     strategy: 
