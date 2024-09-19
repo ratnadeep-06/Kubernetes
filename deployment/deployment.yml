@@ -5,6 +5,7 @@ metadata:
         labels:
             app: todoapp
 spec:
+   type: LoadBalancer
     replicas: 14
     strategy: 
         type: RollingUpdate
