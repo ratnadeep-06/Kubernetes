@@ -17,7 +17,7 @@ spec:
           spec:
               containers:
                   - name: http
-                    image: ubuntu:latest
+                    image: nginx:latest
                     resources: 
                         requests:    #starting point of our pod's resouce
                           cpu: "25m"
