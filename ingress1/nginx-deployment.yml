@@ -14,6 +14,12 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: ratnadeepsali/counter:latest
+        image: nginx:latest
         ports:
         - containerPort: 80
+    spec:
+      containers:
+      - name: nginx
+        image: ratnadeepsali/counter:latest
+        ports:
+        - containerPort: 80    

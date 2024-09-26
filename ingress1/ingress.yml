@@ -16,3 +16,10 @@ spec:
             name: nginx-service
             port:
               number: 80
+      - path: /ratnadeepsali/counter:latest
+        pathType: Prefix
+        backend:
+          service:
+            name: clusteripsrvmob
+            port:
+              number: 8080        
