@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: service-a-deployment
+  name: service-B-deployment
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: service-a
+      app: service-B
   template:
     metadata:
       labels:
-        app: service-a
+        app: service-B
     spec:
       containers:
       - name: nginx
@@ -21,10 +21,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: service-a
+  name: service-B
 spec:
   selector:
-    app: service-a
+    app: service-B
   ports:
   - protocol: TCP
     port: 80
