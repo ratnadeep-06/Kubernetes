@@ -19,7 +19,7 @@ spec:
         spec: 
           containers:
              - name: frontendmobapp
-               image: anupdudhe/mobile
+               image: inginx:latest
                ports:
                   - containerPort: 80
                     protocol: TCP
