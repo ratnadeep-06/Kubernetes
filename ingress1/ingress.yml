@@ -6,20 +6,20 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - host: devopsdeveloper.site
+  - host: example.com
     http:
       paths:
-      - path: /service-A
+      - path: /service-a
         pathType: Prefix
         backend:
           service:
-            name: service-A
+            name: service-a
             port:
               number: 80
-      - path: /service-B
+      - path: /service-b
         pathType: Prefix
         backend:
           service:
-            name: service-B
+            name: service-b
             port:
               number: 80
