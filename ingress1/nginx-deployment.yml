@@ -19,7 +19,7 @@ spec:
         - containerPort: 80
      spec:
       containers:
-      - name: counter
+      - name: /counter
         image: /ratnadeepsali/counter:latest
         ports:
         - containerPort: 8080    

@@ -19,7 +19,7 @@ spec:
         spec: 
           containers:
              - name: frontendmobapp
-               image: inginx:latest
+               image: nginx:latest
                ports:
                   - containerPort: 80
                     protocol: TCP
