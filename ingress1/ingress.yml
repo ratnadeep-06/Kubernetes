@@ -16,7 +16,7 @@ spec:
             name: nginx-service
             port:
               number: 80
-      - path: /ratnadeepsali/counter:latest
+      - path: counter
         pathType: Prefix
         backend:
           service:
