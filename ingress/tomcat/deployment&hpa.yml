@@ -19,9 +19,9 @@ spec:
         spec: 
           containers:
              - name: backendapp
-               image: tomcat:latest
+               image: ratnadeepsali/counter:latest
                ports:
-                  - containerPort: 8080
+                  - containerPort: 80
                     protocol: TCP
                resources:
                   requests:

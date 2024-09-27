@@ -18,11 +18,11 @@ spec:
                 name: frontendsrv
                 port:
                   number: 80
-         -  path: /tomcat
+         -  path: /counter
             pathType: Prefix
             backend:
               service: 
                 name: backendsrv
                 port:
-                  number: 8080
+                  number: 80
     
