@@ -2,26 +2,26 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: deployappmob
+  name: deployappback
   labels:
-      app: deployappmob
+      app: deployappback
 spec:
     replicas: 2     #desiredstate
     strategy: 
           type: RollingUpdate
     selector: 
           matchLabels:
-            app: deployappmob
+            app: deployappback
     template: 
         metadata: 
             labels: 
-              app: deployappmob   
+              app: deployappback   
         spec: 
           containers:
-             - name: frontendmobapp
-               image: nginx:latest
+             - name: backendapp
+               image: tomcat:latest
                ports:
-                  - containerPort: 80
+                  - containerPort: 8080
                     protocol: TCP
                resources:
                   requests:
@@ -39,7 +39,7 @@ spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: deployappmob
+    name: deployappback
   minReplicas: 1
   maxReplicas: 4
   metrics:
