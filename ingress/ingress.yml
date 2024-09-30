@@ -18,11 +18,11 @@ spec:
                 name: frontendsrv
                 port:
                   number: 80
-         -  path: /counter
+         -  path: /student
             pathType: Prefix
             backend:
               service: 
                 name: backendsrv
                 port:
-                  number: 80
+                  number: 8080
     

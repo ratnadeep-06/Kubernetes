@@ -7,7 +7,7 @@ spec:
   selector:
     app: deployappback 
   ports:
-    - port: 80
-      targetPort: 80
-      name: tomcat
+    - port: 8080
+      targetPort: 8080
+      name: stdent
       protocol: TCP
