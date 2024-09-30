@@ -1,4 +1,5 @@
 
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -19,7 +20,7 @@ spec:
         spec: 
           containers:
              - name: frontendapp
-               image: swapnil0078/todoapp:latest
+               image: ratnadeepsali/todo:latest
                ports:
                   - containerPort: 80
                     protocol: TCP
