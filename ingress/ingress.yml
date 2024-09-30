@@ -19,7 +19,7 @@ spec:
                 name: frontendsrv
                 port:
                   number: 80
-         -  path: /student
+         -  path: /stud
             pathType: Prefix
             backend:
               service: 
