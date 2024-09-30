@@ -19,7 +19,7 @@ spec:
         spec: 
           containers:
              - name: frontendapp
-               image: ratnadeepsali/todo:latest
+               image: swapnil0078/todoapp:latest
                ports:
                   - containerPort: 80
                     protocol: TCP
